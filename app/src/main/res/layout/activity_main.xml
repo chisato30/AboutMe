@@ -19,6 +19,19 @@
         android:textColor="@android:color/black"
         android:textSize="@dimen/text_size" />
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textShortMessage|none|textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        tools:ignore="TextContrastCheck" />
+
     <ImageView
         android:id="@+id/star"
         android:layout_width="match_parent"
