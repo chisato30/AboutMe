@@ -50,9 +50,9 @@
         style="NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
         android:textAlignment="center"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:text="nicknameTextView.text = editText.text/>" />
 
     <ImageView
         android:id="@+id/star"
