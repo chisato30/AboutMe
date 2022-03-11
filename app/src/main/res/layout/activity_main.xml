@@ -31,7 +31,7 @@
         android:minHeight="48dp"
         android:text="@string/done_botton"
         android:textAlignment="center"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/done_button"
@@ -43,16 +43,7 @@
         android:fontFamily="@font/roboto"
         android:text="@string/done_botton"
         tools:ignore="TextContrastCheck" />
-        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/nickname_text"
-        style="NameStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:visibility="gone"
-        android:text="nicknameTextView.text = editText.text/>" />
 
     <ImageView
         android:id="@+id/star"
