@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/name_text"
+        android:id="@+id/nickname_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/padding"
@@ -17,7 +17,8 @@
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/text_size" />
+        android:textSize="@dimen/text_size"
+       />
 
     <EditText
         android:id="@+id/nickname_edit"
@@ -29,7 +30,7 @@
         android:hint="@string/what_is_your_nickname"
         android:inputType="textShortMessage|none|textPersonName"
         android:minHeight="48dp"
-        android:text="@string/done_botton"
+        android:text="@string/done_button"
         android:textAlignment="center"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
@@ -41,7 +42,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="@dimen/layout_margin"
         android:fontFamily="@font/roboto"
-        android:text="@string/done_botton"
+        android:text="@string/done_button"
         tools:ignore="TextContrastCheck" />
 
 
