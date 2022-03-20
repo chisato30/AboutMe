@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/nickname_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/padding"
-        android:fontFamily="@font/roboto"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/text_size"
-        android:background="@color/colorAccent"
-        android:paddingBottom="@dimen/small_padding"
-       />
-
-    <EditText
-        android:id="@+id/nickname_edit"
-        style="@style/NameStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/what_is_your_nickname"
-        android:inputType="textShortMessage|none|textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/done_button"
-        android:textAlignment="center"
-        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
-
-    <Button
-        android:id="@+id/done_button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/layout_margin"
-        android:fontFamily="@font/roboto"
-        android:text="@string/done_button"
-        tools:ignore="TextContrastCheck" />
-
-
-    <ImageView
-        android:id="@+id/star"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="#B1B1B1"
-        android:contentDescription="@string/contentDescription"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
-
-    <ScrollView
-        android:id="@+id/bio_scroll"
+<layout>
+    <LinearLayout>
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart="@dimen/layout_padding"
-        android:paddingLeft="@dimen/layout_padding"
-        android:paddingRight="@dimen/layout_padding">
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+    </LinearLayout>
+</layout>
 
-        <TextView
-            android:id="@+id/bio_text"
-            style="@style/NameStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.2"
-            android:text="@string/bio" />
-    </ScrollView>
-</LinearLayout>
+<TextView
+android:background="@color/colorAccent"
+android:fontFamily="@font/roboto"
+android:id="@+id/nickname_text"
+android:layout_height="wrap_content"
+android:layout_margin="@dimen/padding"
+android:layout_width="match_parent"
+android:paddingBottom="@dimen/small_padding"
+android:text="@string/app_name"
+android:textAlignment="center"
+android:textColor="@android:color/black"
+android:textSize="@dimen/text_size" />
+
+<EditText
+style="@style/NameStyle"
+android:autofillHints=""
+android:ems="10"
+android:hint="@string/what_is_your_nickname"
+android:id="@+id/nickname_edit"
+android:inputType="textShortMessage|none|textPersonName"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:minHeight="48dp"
+android:text="@string/done_button"
+android:textAlignment="center"
+tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+<Button
+style="@style/Widget.AppCompat.Button.Colored"
+android:fontFamily="@font/roboto"
+android:id="@+id/done_button"
+android:layout_gravity="center_horizontal"
+android:layout_height="wrap_content"
+android:layout_margin="@dimen/layout_margin"
+android:layout_width="wrap_content"
+android:text="@string/done_button"
+tools:ignore="TextContrastCheck" />
+
+
+<ImageView
+android:background="#B1B1B1"
+android:contentDescription="@string/contentDescription"
+android:id="@+id/star"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_width="match_parent"
+app:srcCompat="@android:drawable/btn_star_big_on"
+tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+<ScrollView
+android:id="@+id/bio_scroll"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:paddingLeft="@dimen/layout_padding"
+android:paddingRight="@dimen/layout_padding"
+android:paddingStart="@dimen/layout_padding">
+
+<TextView
+    style="@style/NameStyle"
+    android:id="@+id/bio_text"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:lineSpacingMultiplier="1.2"
+    android:text="@string/bio" />
+</ScrollView></LinearLayout>
