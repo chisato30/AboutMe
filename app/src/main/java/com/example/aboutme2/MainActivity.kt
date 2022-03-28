@@ -24,19 +24,22 @@ class MainActivity : AppCompatActivity() {
         binding.doneButton.setOnClickListener {
             addNickname(it)
         }
+        binding.apply {
         binding.nicknameText.text = binding.nicknameEdit.text
         binding.nicknameEdit.visibility = View.GONE
         binding.doneButton.visibility = View.GONE
         binding.nicknameText.visibility = View.VISIBLE
+        }
+        binding.nicknameText.text = binding.nicknameEdit.text.toString()
         findViewById<TextView>(R.id.nickname_text).setOnClickListener {
             updateNickname(it)
         }
 
     }
 
-    private fun addNickname(view: idView) {
-        val nicknameTextView = idView<TextView>(R.id.nickname_text)
-        val editText = idView<EditText>(R.id.nickname_edit)
+    private fun addNickname(view:View) {
+        val nicknameTextView = findViewById<TextView>(R.id.nickname_text)
+        val editText = findViewById<EditText>(R.id.nickname_edit)
         nicknameTextView.text = editText.text
         editText.visibility = View.GONE
         view.visibility = View.GONE
